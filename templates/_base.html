@@ -1,9 +1,9 @@
 {% load i18n %}
 
-{% get_language_info for LANGUAGE_CODE as lang %}
+{% get_current_language as LANGUAGE_CODE %}
 
 <!DOCTYPE html>
-<html lang="{{ lang.code }}">
+<html lang="{{ LANGUAGE_CODE }}">
   <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
