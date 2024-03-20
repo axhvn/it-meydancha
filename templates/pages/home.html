@@ -1,9 +1,12 @@
 {% extends "_base.html" %}
 
+{% load static %}
+
 {% block content %}
-  <header>
-    <nav>
-      <ul>
+  <header class="header-primary">
+    <img class="logo" src="{% static "img/logo.png" %}" alt="" width="auto" height="60">
+    <nav class="navbar">
+      <ul class="list">
         <li>Home</li>
         <li>About</li>
         <li>Projects</li>

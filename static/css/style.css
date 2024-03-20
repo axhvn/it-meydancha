@@ -3,5 +3,19 @@
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+}
+
+.header-primary {
+  display: flex;
+}
+
+.header-primary .navbar .list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
 }
