@@ -33,7 +33,13 @@ body {
   border: none;
   color: white;
   border-radius: 20px;
-  padding: 10px 20px;
+}
+
+.btn-primary-outline-light {
+  border: 2px solid var(--primary-color-light);
+  color: var(--primary-color-light);
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 .bg-gray {
@@ -42,6 +48,10 @@ body {
 
 .text-primary-dark {
   color: var(--primary-color-dark);
+}
+
+.text-primary-light {
+  color: var(--primary-color-light);
 }
 
 .subheading-line {
