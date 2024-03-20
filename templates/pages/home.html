@@ -1,18 +1,78 @@
 {% extends "_base.html" %}
-
 {% load static %}
 
 {% block content %}
-  <header class="header-primary">
-    <img class="logo" src="{% static "img/logo.png" %}" alt="" width="auto" height="60">
-    <nav class="navbar">
-      <ul class="list">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Technologies</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+  <header class="bg-primary-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="{% static "img/logo.png" %}" alt="" width="" height="60">
+      <nav>
+        <ul class="list-inline fs-2">
+          <li class="list-inline-item me-5">Home</li>
+          <li class="list-inline-item me-5">About</li>
+          <li class="list-inline-item me-5">Projects</li>
+          <li class="list-inline-item me-5">Technologies</li>
+          <li class="list-inline-item">Contact</li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <main>
+    <section class="bg-primary-dark text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h1 class="hero-section-heading fw-bold">Sanly Çözgüt IT meýdança</h1>
+            <p class="text-white-50 fs-1 fw-semibold mb-5">
+              «Sanly Çözgüt IT meýdança» HJ sanly ykdysadyýete geçmek üçin
+              programma üpjünçilikleri we ýokary derejeli IT hyzmatlary ýerine
+              ýetirýär.
+            </p>
+            <button class="btn-primary-light">Tanyşmak</button>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid" src="{% static "img/hero-img.png" %}" alt="" width="" height="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray">
+      <div class="container d-flex align-items-center justify-content-between py-4">
+        <img class="img-fluid" src="{% static "img/html.png" %}" alt="" width="100" height="">
+        <img class="img-fluid" src="{% static "img/css.png" %}" alt="" width="100" height="">
+        <img class="img-fluid" src="{% static "img/js.png" %}" alt="" width="100" height="">
+        <img class="img-fluid" src="{% static "img/python.png" %}" alt="" width="100" height="">
+        <img class="img-fluid" src="{% static "img/go.png" %}" alt="" width="100" height="">
+        <img class="img-fluid" src="{% static "img/cpp.png" %}" alt="" width="100" height="">
+      </div>
+    </section>
+    <section class="py-5">
+      <h2 class="section-heading text-primary-dark fw-bold text-center mb-3">BIZ BARADA</h2>
+      <div class="subheading-line mb-5"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p>
+              «Sanly Çözgüt IT meýdança» HJ sanly ykdysadyýete geçmek üçin
+              programma üpjünçilikleri we ýokary derejeli IT hyzmatlary ýerine
+              ýetirýär.
+            </p>
+            <ul>
+              <li>Web Dizaýn</li>
+              <li>Serwer</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p>
+              Anyk kesgitlenen möhletde netijelere ýetmek üçin iň oňat çözgütleri
+              hödürleýäris. Siz hem ykdysadyýete geçmek üçin programma
+              üpjünçilikleri we ýokary derejeli IT hyzmatlaryndan peýdalanyň!
+              Giňişleýin maglumat üçin aşakdaky düwmäni ulanyp bilersiňiz.
+            </p>
+            <button>Tanyşmak</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 {% endblock content %}
