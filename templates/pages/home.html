@@ -108,8 +108,8 @@
           {% for project in projects %}
             <div class="col-6 p-5">
               <div class="project-card">
-                <img src="/media/{{ project.photo.url }}" alt="" height="" width="">
-                <h2>{{ project.name }}</h2>
+                <img class="img-fluid" src="/media/{{ project.photo }}" alt="" height="" width="">
+                <h2 class="p-4">{{ project.name }}</h2>
               </div>
             </div>
           {% endfor %}
