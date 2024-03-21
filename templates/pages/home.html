@@ -103,6 +103,17 @@
       <h2 class="section-heading text-primary-dark fw-bold text-center mb-3">TASLAMALAR</h2>
       <div class="subheading-line mb-3"></div>
       <p class="text-center">"Sanly Çözgüt IT meýdança" HJ-niň agzalarynyň taslamalary bilen tanyş boluň.</p>
+      <div class="container">
+        <div class="row">
+          {% for project in projects %}
+            <div class="col-6 p-5">
+              <div class="project-card">
+                <img src="{% static project.image.url %}" alt="" height="" width="">
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </section>
   </main>
 {% endblock content %}
