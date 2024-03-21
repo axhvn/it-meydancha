@@ -23,8 +23,8 @@
         <img src="{% static "img/logo.png" %}" alt="" width="" height="60">
         <nav>
           <ul class="list-inline fs-2">
-            <li class="list-inline-item me-5">Baş sahypa</li>
-            <li class="list-inline-item me-5">Biz barada</li>
+            <li class="list-inline-item me-5"><a class="text-white text-decoration-none" href="{% url "home" %}">Baş sahypa</a></li>
+            <li class="list-inline-item me-5"><a class="text-white text-decoration-none" href="{% url "about" %}">Biz barada</a></li>
             <li class="list-inline-item me-5">Taslamalar</li>
             <li class="list-inline-item me-5">Tehnologiýalar</li>
             <li class="list-inline-item">Habarlaşmak</li>
@@ -51,12 +51,16 @@
             <h3 class="mb-4 text-primary-dark">Sahypalar</h3>
             <ul class="list-unstyled">
               <li class="mb-3">
-                <i class="bi bi-caret-right-fill text-primary-light"></i> Baş
-                sahypa
+                <a class="text-decoration-none text-black" href="{% url "home" %}">
+                  <i class="bi bi-caret-right-fill text-primary-light"></i> Baş
+                  sahypa
+                </a>
               </li>
               <li class="mb-3">
-                <i class="bi bi-caret-right-fill text-primary-light"></i> Biz
-                barada
+                <a class="text-black text-decoration-none" href="{% url "about" %}">
+                  <i class="bi bi-caret-right-fill text-primary-light"></i> Biz
+                  barada
+                </a>
               </li>
               <li class="mb-3">
                 <i class="bi bi-caret-right-fill text-primary-light"></i>
