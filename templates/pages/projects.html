@@ -1,20 +1,25 @@
 {% extends "_base.html" %}
 
 {% block content %}
-  <div class="container">
-    <div class="row">
-      {% for project in projects %}
-        <div class="col-6 p-5">
-          <div class="project-card">
-            <img class="img-fluid"
-                 src="/media/{{ project.photo }}"
-                 alt=""
-                 height=""
-                 width="">
-            <h2 class="p-4">{{ project.name }}</h2>
+  <section class="py-5">
+    <h2 class="section-heading text-primary-dark fw-bold text-center mb-3">TASLAMALAR</h2>
+    <div class="subheading-line mb-3"></div>
+    <p class="text-center">"Sanly Çözgüt IT meýdança" HJ-niň agzalarynyň taslamalary bilen tanyş boluň.</p>
+    <div class="container">
+      <div class="row">
+        {% for project in projects %}
+          <div class="col-6 p-5">
+            <div class="project-card">
+              <img class="img-fluid"
+                   src="/media/{{ project.photo }}"
+                   alt=""
+                   height=""
+                   width="">
+              <h2 class="p-4">{{ project.name }}</h2>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
+  </section>
 {% endblock content %}

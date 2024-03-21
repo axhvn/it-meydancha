@@ -30,3 +30,14 @@ def projects_page(request):
             "projects": projects,
         },
     )
+
+
+def project_detail(request, pk):
+    project = models.Project.objects.get(id=pk)
+    return render(
+        request,
+        "pages/project_detail.html",
+        {
+            "project": project,
+        },
+    )
