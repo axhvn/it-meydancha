@@ -8,5 +8,8 @@ class Project(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     photo = models.ImageField(upload_to="projects/", null=True, blank=True)
 
+    class Meta:
+        ordering = ["-created_at"]
+
     def __str__(self):
         return self.name

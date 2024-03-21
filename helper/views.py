@@ -4,7 +4,7 @@ from . import models
 
 
 def home_page(request):
-    projects = models.Project.objects.all()
+    projects = models.Project.objects.all().order_by("-id")[:2]
     return render(
         request,
         "pages/home.html",
