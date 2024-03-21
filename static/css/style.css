@@ -73,3 +73,9 @@ body {
 .fs-service-icon {
   font-size: 40px;
 }
+
+.map-frame {
+  border: 0;
+  width: 100%;
+  height: 500px;
+}
