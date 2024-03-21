@@ -42,7 +42,7 @@ INSTALLED_DJANGO_APPS = [
 INSTALLED_THIRD_PARTY_APPS = []
 
 INSTALLED_LOCAL_APPS = [
-    "pages",
+    "helper",
 ]
 
 INSTALLED_APPS = (
