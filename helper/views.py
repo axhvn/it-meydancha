@@ -19,3 +19,14 @@ def about_page(request):
         request,
         "pages/about.html",
     )
+
+
+def projects_page(request):
+    projects = models.Project.objects.all()
+    return render(
+        request,
+        "pages/projects.html",
+        {
+            "projects": projects,
+        },
+    )
