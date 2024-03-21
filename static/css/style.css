@@ -64,3 +64,12 @@ body {
 .section-heading {
   font-size: 3.4rem;
 }
+
+.service-card {
+  max-width: 300px;
+  padding: 30px;
+}
+
+.fs-service-icon {
+  font-size: 40px;
+}
