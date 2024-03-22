@@ -41,3 +41,7 @@ def project_detail(request, pk):
             "project": project,
         },
     )
+
+
+def contact_page(request):
+    return render(request, "pages/contact.html")

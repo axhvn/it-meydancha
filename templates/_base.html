@@ -27,7 +27,7 @@
             <li class="list-inline-item me-5"><a class="text-white text-decoration-none" href="{% url "about" %}">Biz barada</a></li>
             <li class="list-inline-item me-5"><a class="text-white text-decoration-none" href="{% url "projects" %}">Taslamalar</a></li>
             <li class="list-inline-item me-5">Tehnologiýalar</li>
-            <li class="list-inline-item">Habarlaşmak</li>
+            <li class="list-inline-item"><a class="text-white text-decoration-none" href="{% url "contact" %}">Habarlaşmak</a></li>
           </ul>
         </nav>
       </div>
@@ -69,8 +69,10 @@
                 </a>
               </li>
               <li>
-                <i class="bi bi-caret-right-fill text-primary-light"></i>
-                Taslamalar
+                <a class="text-black text-decoration-none" href="{% url "contact" %}">
+                  <i class="bi bi-caret-right-fill text-primary-light"></i>
+                  Taslamalar
+                </a>
               </li>
             </ul>
           </div>
