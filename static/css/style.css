@@ -83,3 +83,15 @@ body {
 .project-card {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
+.social-li {
+  border-radius: 100vw;
+  padding: 5px 10px;
+  background-color: hsl(199, 74%, 59%);
+  color: white;
+}
+
+.social-li:hover {
+  background-color: hsl(199, 52%, 49%);
+  cursor: pointer;
+}
