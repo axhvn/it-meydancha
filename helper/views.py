@@ -8,17 +8,12 @@ def home_page(request):
     return render(
         request,
         "pages/home.html",
-        {
-            "projects": projects,
-        },
+        {"projects": projects},
     )
 
 
 def about_page(request):
-    return render(
-        request,
-        "pages/about.html",
-    )
+    return render(request, "pages/about.html")
 
 
 def projects_page(request):
@@ -26,9 +21,7 @@ def projects_page(request):
     return render(
         request,
         "pages/projects.html",
-        {
-            "projects": projects,
-        },
+        {"projects": projects},
     )
 
 
@@ -37,9 +30,7 @@ def project_detail(request, pk):
     return render(
         request,
         "pages/project_detail.html",
-        {
-            "project": project,
-        },
+        {"project": project},
     )
 
 
